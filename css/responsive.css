@@ -1,0 +1,161 @@
+/* Responsive Styles */
+
+/* Large Screens (Default) */
+/* Styles already set in styles.css */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .audio-card,
+    .testimonial-card,
+    .team-member {
+        flex: 0 0 calc(50% - 15px);
+    }
+    
+    .about-image,
+    .about-text {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .genre-content {
+        flex-direction: column;
+    }
+}
+
+/* Small Screens (Mobile Landscape) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .audio-card,
+    .testimonial-card,
+    .team-member {
+        flex: 0 0 100%;
+    }
+    
+    .footer-content > div {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .footer-logo,
+    .footer-links,
+    .footer-contact {
+        max-width: 100%;
+    }
+}
+
+/* Extra Small Screens (Mobile Portrait) */
+@media (max-width: 576px) {
+    .hero {
+        height: 40vh;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .featured h2,
+    .testimonials h2,
+    .cta h2,
+    .page-header h2,
+    .team h2 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .genre-nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .genre-btn {
+        width: 100%;
+    }
+    
+    .audio-sample {
+        flex: 0 0 100%;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .error-page h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Navigation Adjustments for very small screens */
+@media (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Hover Effect Removal for Touch Devices */
+@media (hover: none) {
+    .btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .audio-card:hover,
+    .testimonial-card:hover,
+    .team-member:hover {
+        transform: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    nav ul li a:hover:after {
+        width: 0;
+    }
+}
